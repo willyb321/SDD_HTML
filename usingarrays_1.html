@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var array1 = [];
+            num1 = parseInt((prompt("num1")));
+            num2 = parseInt((prompt("num2")));
+            operand = prompt("What operand?");
+            //var num4 = array1.indexOf(array1.length - 2);
+            //var num5 = array1.indexOf(array1.length - 1);
+            //var num6 = parseInt(num3) + parseInt(num4);
+            array1.push(num1);
+            array1.push(num2);
+            function operandFunc() {
+                if (operand === "+") {
+                    array1.push(parseInt(numindef1 + parseInt(numindef2)));
+                }
+                if (operand === "-") {
+                    array1.push(parseInt(numindef1 - parseInt(numindef2)));
+                }
+                if (operand === "/") {
+                    array1.push(parseInt(numindef1 / parseInt(numindef2)));
+                }
+                if (operand === "*") {
+                    array1.push(parseInt(numindef1 * parseInt(numindef2)));
+                }
+
+            }
+            array1.push(num1 + num2);
+            document.write("initial: <br>" + array1);
+
+            document.write("new array: <br>" + array1);
+            //array1.push(num3);
+            var i = 1;
+            do
+
+            {
+                var numindef1 = array1.pop();
+                var numindef2 = array1.pop();
+                array1.push(parseInt(numindef2));
+                array1.push(parseInt(numindef1));
+                operandFunc();
+                //array1.push(parseInt(numindef1) + parseInt(numindef2));
+                document.write("<br>" + array1);
+                i++;
+            } while (i < 51);
+            // this do while loop didn't work.
+            //do { 
+            //array1.push(num3);
+            //  var num4 = array1.indexOf(array1.length - 1);
+            // var num5 = array1.indexOf(array1.length - 2);
+            // var num6 = parseInt(num3) + parseInt(num4);
+            //array1.push(num5);
+            // array1.push(num6);
+            // document.write(array1);
+            // } while (array1.length < 50);
+        </script>
+    </body>
+</html>
