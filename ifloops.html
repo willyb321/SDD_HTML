@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>if loops m8</title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+
+var fruitPrice = 1
+var runs = 0
+while (runs <5) {
+runs++
+var fruitName = prompt("What is yo fruit?")
+var fruitAmount = prompt("How much yo want?")
+if (fruitName == "Apple" || fruitName == "Banana" || fruitName == "Orange" || fruitName == "Grape" || fruitName == "Tomato") {
+  document.write("Price for your choice is $1 each. Your price is $" + fruitAmount * fruitPrice)
+  document.write("<br>Your fruit was " + fruitName + "<br>")
+}else {
+  document.write("Invalid, try again.")
+}
+}
+  </script>
+
+</body>
+
+</html>
