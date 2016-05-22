@@ -9,22 +9,23 @@
 <body>
 
   <script type="text/javascript">
-    var fruitPrice = 0
-    var fruitPricestore = []
-    var runs = 0
-    while (runs < 5) {
-      runs++
-      var fruitName = prompt("What is yo fruit?\nChoices:\nApple\nBanana\nOrange\nGrape\nTomato")
-      var fruitAmount = prompt("How much yo want?")
-      if (fruitName == "Apple" || fruitName == "Banana" || fruitName == "Orange" || fruitName == "Grape" || fruitName == "Tomato") {
-        fruitPrice = Math.floor((Math.random() * 10) + 1);
-        document.write("Price for your choice is " + fruitPrice + " each. Your price is $" + fruitAmount * fruitPrice)
-        document.write("<br>Your fruit was " + fruitName + "<br>")
+    function main() {
+      var fruitPrice = 0
+      for(var i = 0; i < 5; i++) {
+        var fruitName = prompt("What is yo fruit?\nChoices:\nApple\nBanana\nOrange\nGrape\nTomato")
+        var fruitAmount = prompt("How much yo want?")
+        if (fruitName == "Apple" || fruitName == "Banana" || fruitName == "Orange" || fruitName == "Grape" || fruitName == "Tomato") {
+          fruitPrice = Math.floor((Math.random() * 10) + 1);
+          document.write("Price for your choice is " + fruitPrice + " each. Your price is $" + fruitAmount * fruitPrice)
+          document.write("<br>Your fruit was " + fruitName + "<br>")
         }
-        else {
-          document.write("Invalid, try again.")
+        if(fruitName = "null"){
+          document.write("Cancelled")
+          return;
         }
       }
+    }
+    main()
   </script>
 
 </body>
