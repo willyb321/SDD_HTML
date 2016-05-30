@@ -11,20 +11,21 @@
   <script type="text/javascript">
     function main() {
       var fruitPrice = 0
-      for(var i = 0; i < 5; i++) {
-        var fruitName = prompt("What is yo fruit?\nChoices:\nApple\nBanana\nOrange\nGrape\nTomato")
-        var fruitAmount = prompt("How much yo want?")
+      while (fruitName != "EXIT") {
+        var fruitName = prompt("What is yo fruit?\nChoices:\nApple\nBanana\nOrange\nGrape\nTomato\n Type EXIT to exit.");
+        
         if (fruitName == "Apple" || fruitName == "Banana" || fruitName == "Orange" || fruitName == "Grape" || fruitName == "Tomato") {
-          fruitPrice = Math.floor((Math.random() * 10) + 1);
-          document.write("Price for your choice is " + fruitPrice + " each. Your price is $" + fruitAmount * fruitPrice)
-          document.write("<br>Your fruit was " + fruitName + "<br>")
+          var fruitAmount = parseInt(prompt("How many do you want?"));
+          fruitPrice = Math.floor((Math.random() * 5) + 1);
+          document.write("Price for your choice is " + fruitPrice + " each. Your price is $" + fruitAmount * fruitPrice);
+          document.write("<br>Your fruit was " + fruitName + "<br>");
+
         }
-        if(fruitName = "null"){
-          document.write("Cancelled")
-          return;
-        }
+
+
       }
     }
+
     main()
   </script>
 
