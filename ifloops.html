@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <script type="text/javascript">
-       function main() {
-    var fruitPrice = 0
-    while (fruitName != "EXIT") {
-    var fruitName = prompt("What is yo fruit?\nChoices:\nApple\nBanana\nOrange\nGrape\nTomato\n Type EXIT to exit.");
-    
-    if (fruitName === "Apple" || fruitName === "Banana" || fruitName === "Orange" || fruitName === "Grape" || fruitName === "Tomato") {
-    var fruitAmount = parseInt(prompt("How many do you want?"));
-    fruitPrice = Math.floor((Math.random() * 3) + 1);
-    document.write("Price for your choice is " + fruitPrice + " each. Your price is $" + fruitAmount * fruitPrice);
-    document.write("<br>Your fruit was " + fruitName + "<br>");
-    }
-    }
+    function main() {
+        var fruitPrice = 0
+        while (fruitName != "EXIT") {
+            var fruitName = prompt("What is yo fruit?\nChoices:\nApple\nBanana\nOrange\nGrape\nTomato\n Type EXIT to exit.");
+
+            if (fruitName === "Apple" || fruitName === "Banana" || fruitName === "Orange" || fruitName === "Grape" || fruitName === "Tomato") {
+                var fruitAmount = parseInt(prompt("How many do you want?"));
+                fruitPrice = Math.floor((Math.random() * 3) + 1);
+                document.write("Price for your choice is " + fruitPrice + " each. Your price is $" + fruitAmount * fruitPrice);
+                document.write("<br>Your fruit was " + fruitName + "<br>");
+            }
+        }
     }
     main()
     </script>
     <meta charset="utf-8">
     <title>if loops m80</title>
-  </head>
-  <body>
-    
-  </body>
+</head>
+
+<body>
+</body>
+
 </html>

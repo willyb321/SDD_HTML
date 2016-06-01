@@ -5,40 +5,42 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>Titular Title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </head>
-    <body>
-        <script>
-            var books = [];
-            books.push(prompt("Book 1"));
-            books.push(prompt("Book 2"));
-            books.push(prompt("Book 3"));
-            books.push(prompt("Book 4"));
-            books.push(prompt("Book 5"));
-            books.push(prompt("Book 6"));
-            books.push(prompt("Book 7"));
-            books.push(prompt("Book 8"));
-            books.push(prompt("Book 9"));
-            books.push(prompt("Book 10"));
-            var check = prompt("What book do you want to check?");
-//var checkarray = books.prototype.indexOf(check);
-//console.log(checkarray);
-            if (books.indexOf(check) >= 0) {
-                //console.log(books.indexOf(check));
-                console.log("Found. list is: \n" + books);
-                alert("Found. Book list is: \n" + books);
-                document.write("Found. Book list is: \n" + books);
-            } else {
-                books.push(check);
-                console.log("Not found. Adding - new list is: \n" + books);
-                alert("Not found. Adding. Book list is: \n" + books);
-                document.write("Not found. Adding. New List is: \n" + books);
-            }
-        </script>
-        <div>Titular Content</div>
-    </body>
+<head>
+    <title>Titular Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+    var books = [];
+    books.push(prompt("Book 1"));
+    books.push(prompt("Book 2"));
+    books.push(prompt("Book 3"));
+    books.push(prompt("Book 4"));
+    books.push(prompt("Book 5"));
+    books.push(prompt("Book 6"));
+    books.push(prompt("Book 7"));
+    books.push(prompt("Book 8"));
+    books.push(prompt("Book 9"));
+    books.push(prompt("Book 10"));
+    var check = prompt("What book do you want to check?");
+    //var checkarray = books.prototype.indexOf(check);
+    //console.log(checkarray);
+    if (books.indexOf(check) >= 0) {
+        //console.log(books.indexOf(check));
+        console.log("Found. list is: \n" + books);
+        alert("Found. Book list is: \n" + books);
+        document.write("Found. Book list is: \n" + books);
+    } else {
+        books.push(check);
+        console.log("Not found. Adding - new list is: \n" + books);
+        alert("Not found. Adding. Book list is: \n" + books);
+        document.write("Not found. Adding. New List is: \n" + books);
+    }
+    </script>
+    <div>Titular Content</div>
+</body>
+
 </html>
