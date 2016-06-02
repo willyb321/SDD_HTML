@@ -5,7 +5,7 @@
     <script type="text/javascript">
     function main() {
         var fruitPrice = 0
-        while (fruitName != "EXIT") {
+        do {
             var fruitName = prompt("What is yo fruit?\nChoices:\nApple\nBanana\nOrange\nGrape\nTomato\n Type EXIT to exit.");
 
             if (fruitName === "Apple" || fruitName === "Banana" || fruitName === "Orange" || fruitName === "Grape" || fruitName === "Tomato") {
@@ -13,8 +13,9 @@
                 fruitPrice = Math.floor((Math.random() * 3) + 1);
                 document.write("Price for your choice is " + fruitPrice + " each. Your price is $" + fruitAmount * fruitPrice);
                 document.write("<br>Your fruit was " + fruitName + "<br>");
+            
             }
-        }
+        } while  (fruitName != "EXIT" && fruitName != "exit" && fruitName != null);
     }
     main()
     </script>
